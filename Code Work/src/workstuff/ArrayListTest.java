@@ -30,6 +30,9 @@ public class ArrayListTest {
 			System.out.println(listofInts.get(i));
 		}//end for
 
+		System.out.println(listofInts.indexOf(98));
+		System.out.println(listofInts.indexOf(99));
+		
 	}//end main
 
 }
