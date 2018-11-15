@@ -71,7 +71,7 @@ public class DSA6 {
 		System.out.println("");
 		System.out.println("In Party Playlist: ");
 		for(int i = 0; i < partyPlaylist.size(); i++) {
-			System.out.println(i + " " + partyPlaylist.get(i) + " " + artists.get());
+			System.out.println(i + " " + partyPlaylist.get(i) + " " + artists.get(allSongs.get(i)));
 		}//end for
 		
 		System.out.println("Would you like to keep using this program?\n1. Yes\n2. No");
