@@ -958,95 +958,101 @@ public class PyGame {
 		  }
 		  else {
 		  // if( anything else is written other than 1 or 2 continue
-		    System.out.println ("I don't think you understood the question.")
+		    System.out.println ("I don't think you understood the question.");
 		    // System.out.printlns  "I don't think you understood the question"
 		    //sleep(3)
 		    // //sleeps the program for 3 seconds
-		    System.out.println ("Try again")
+		    System.out.println ("Try again");
 		    // System.out.printlns "Try again"
 		    //sleep(2)
 		    // //sleeps the program for 2 seconds
-		    gunroominside()
+		    gunroominside();
 		    // calls the function gunroominside() to go back to it
+		  }
 
-		public static void Fightnumber1():
+		public static void Fightnumber1() {
 		//public static voidines Fightnumber1 with no parameters
-		  System.out.println ("Intense music incoming!")
+		  System.out.println ("Intense music incoming!");
 		  // System.out.printlns "Intense music incoming!"
 		  //sleep(3)
 		  // //sleeps the program for 3 seconds
-		  System.out.println ("First zombie coming")
+		  System.out.println ("First zombie coming");
 		  // System.out.printlns "First zombie coming"
 		  //sleep(2)
 		  // //sleeps the program for 2 seconds
-		  choice = int(input("Enter 1 to shoot in the head or 2 in the chest"))
+			System.out.println("Enter 1 to shoot in the head or 2 in the chest");
+		  choice = scan.nextInt();
 		  // creates the variable choice and asks the user "Enter 1 to shoot in the head"
-		  if( choice == 1:
+		  if( choice == 1) {
 		  // if( the choice is equal to 1 continue
-		    System.out.println ("You shoot the zombies in the head")
+		    System.out.println ("You shoot the zombies in the head");
 		    // System.out.printlns "You shoot the zombies in the head"
 		    //sleep(3)
 		    // //sleeps the program for 3 seconds
-		    System.out.println ("They all die")
+		    System.out.println ("They all die");
 		    // System.out.printlns "They all die"
 		    //sleep(2)
 		    // //sleeps the program for 2 seconds
-		    System.out.println ("Congratulations")
+		    System.out.println ("Congratulations");
 		    // System.out.printlns Congratulations
+		  }
 		  
-		public static void Endgame():
+		public static void Endgame() {
 		// public static voidines function Endgame()
-		  System.out.println ("Congratulations!")
+		  System.out.println ("Congratulations!");
 		  // System.out.printlns "Congratulations!"
 		  //sleep(2)
 		  // //sleeps the program for 2 seconds
-		  System.out.println ("You have succesfully found your family!")
+		  System.out.println ("You have succesfully found your family!");
 		  // System.out.printlns "You have succesfully found your family!"
 		  //sleep(3)
 		  ////sleeps the program for 3 seconds
-		  System.out.println ("And without dying too!")
+		  System.out.println ("And without dying too!");
 		  // System.out.printlns "And without dying too!"
 		  //sleep(2)
 		  // //sleeps the program for 2 seconds
-		  System.out.println ("I hope....")
+		  System.out.println ("I hope....");
 		  // System.out.printlns "I hope...."
 		  //sleep(2)
 		  // //sleeps the program for 2 seconds
-		  System.out.println ("Would you like to play again or End?")
+		  System.out.println ("Would you like to play again or End?");
 		  // System.out.printlns "Would you like to play again or End?"
 		  //sleep(3)
 		  // //sleeps the program for 3 seconds
-		  
-		  choice = int(input("Enter 1 to play again or 2 to End."))
+		  System.out.println("Enter 1 to play again or 2 to End.");
+		  choice = scan.nextInt();
 		  // creates the variable choice and System.out.printlns "Enter 1 to play again or 2 to End."
-		  if( choice == 1:
+		  if( choice == 1) {
 		  // if( the user choice is equal to 1 continue
-		    System.out.println ("Good Luck!")
+		    System.out.println ("Good Luck!");
 		    // System.out.printlns "Good Luck!"
 		    //sleep(2)
 		    // //sleeps the program for 2 seconds
-		    YourRoom()
+		    YourRoom();
 		    // calls the function YourRoom() to go to it
-		  else if(( choice == 2:
+		  }
+		  else if( choice == 2) {
 		  // else if(( the user choice is equal to 2 continue
-		    System.out.println ("Ok that's Fine!")
+		    System.out.println ("Ok that's Fine!");
 		    // System.out.printlns "Ok that's Fine!"
 		    //sleep(2)
 		    // //sleeps the program for 2 seconds
-		    System.out.println ("Just press the Stop◻️ button at the top")
+		    System.out.println ("Just press the Stop◻️ button at the top");
 		    // System.out.printlns "Just press the Stop◻️ button at the top"
+		  }
 		  else {
 		  // if( user choice is anything other than 1 or 2 continue
-		    System.out.println ("Come on it's the end of the game.")
+		    System.out.println ("Come on it's the end of the game.");
 		    // System.out.printlns "Come on it's the end of the game."
 		    //sleep(2)
 		    // //sleeps the program for 2 seconds
-		    System.out.println ("And you still don't understand enter 1 or 2. Jeeze.")
+		    System.out.println ("And you still don't understand enter 1 or 2. Jeeze.");
 		    // System.out.printlns "And you still don't understand enter 1 or 2. Jeeze."
 		    //sleep(3)
 		    // //sleeps the program for 3 seconds
-		    Endgame()
+		    Endgame();
 		    // calls the function Endgame() to go to it.
+		  }
 		    
 	public static void main(String[] args) {
 		System.out.println ("This game will be based on your choices.")
