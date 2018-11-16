@@ -7,9 +7,9 @@ public class PyGame {
 	static Scanner scan = new Scanner(System.in);
 	static int choice;
 	static int UserHP = 50;
-			// sets UserHP to 50
-			static ArrayList<String> Backpack = new ArrayList<>(); 
-			// makes a backpack which will be filled with items during gameplay
+	// sets UserHP to 50
+	static ArrayList<String> Backpack = new ArrayList<>();
+	// makes a backpack which will be filled with items during gameplay
 	
 	public static void YourRoom() {
 		// creates YourRoom with no arguments  
@@ -131,18 +131,19 @@ public class PyGame {
 		  System.out.println("Say 1 to take clothes. Say 2 to leave them");
 		  choice = scan.nextInt();
 		  // makes the choice variable and System.out.printlns "Say yes to take clothes. Say no to leave them"
-		  if (choice == 1 && Backpack.contains("Clothes") == false) {
+		  if (choice == 1 && !Backpack.contains("Clothes")) {
 		  // if( the user choice equals to Yes and clothes are not in the variable Backpack continue  
-		    if (Backpack.contains("Clothes") == true) {
+		    if (Backpack.contains("Clothes")) {
 		    // if( Clothes are in Backpack continue  
 		      System.out.println ("You already have clothes. Why would you need more?");
 		      // System.out.printlns "You already have clothes. Why would you need more?"
 		    }
-		    if (Backpack.contains("Clothes") == false) {
+		    if (Backpack.contains("Clothes")) {
 		    // if( Clothes are not in Backpack continue
 		      Backpack.add("Clothes");
 		      // goes to Backpack and adds the Item "Clothes to it"
 		    }
+		  }
 		  else if( choice == 2) {
 		  // if( the user choice is equal to No continue  
 		    System.out.println ("Thats alright, I also like being without clothes");
@@ -171,7 +172,7 @@ public class PyGame {
 		  //sleep(3)
 		  // //sleeps the program for 3 seconds 
 		  System.out.println ("Your choices are \n" +
-		  "1. Continue Through the door anyways." +
+		  "1. Continue Through the door anyways. \n" +
 		  "2. Go back to the kitchen");
 		  // System.out.printlns Your choices are
 		  // 1. Continue Through the door anyways.
@@ -202,9 +203,8 @@ public class PyGame {
 		    basement1();
 		    // calls the basement1() function to go there
 		  }
-		  }
 		}
-		  		  
+		  		  		  
 		public static void kitchen1() {
 		// public static voidines Kitchen1 with no arguments
 		  System.out.println ("You return to the kitchen.");
@@ -731,6 +731,7 @@ public class PyGame {
 		    // System.out.printlns "OPEN THE DOOR, OR WE WILL!"
 		    //sleep(3)
 		    // //sleeps the program for 3 seconds
+		  }
 		    System.out.println ("You're going to have to make a choice whether to open the door or not.");
 		    // System.out.printlns "You're going to have to make a choice whether to open the door or not."
 		    System.out.println("Enter 1 to open Door, Enter 2 to keep it closed.");
@@ -742,8 +743,8 @@ public class PyGame {
 		      // System.out.printlns "You aproach the door quickly"
 		      //sleep(2)
 		      // //sleeps the program for 2 seconds
-		      System.out.println ("You can still go back if( you'd like?");
-		      // System.out.printlns "You can still go back if( you'd like"
+		      System.out.println ("You can still go back if you'd like?");
+		      // System.out.printlns "You can still go back if you'd like"
 		      //sleep(2)
 		      // //sleeps the program for 2 seconds
 		      System.out.println("Enter 1 to turn handle, Enter 2 to not open.");
@@ -812,7 +813,7 @@ public class PyGame {
 		      // calls the function knockknock() to go to it.
 		    }
 		  }
-		}
+		
 		 
 		public static void Bustdoor() {
 		// public static voidines the function Bustdoor():
@@ -830,7 +831,7 @@ public class PyGame {
 		    
 		public static void gunroom() {
 		// public static voidines the variable gunroom()  
-		  System.out.println ("Ok, you don't have to continue if( you dont want to.");
+		  System.out.println ("Ok, you don't have to continue if you dont want to.");
 		  // System.out.printlns "Ok, you don't have to continue if( you dont want to."
 		  //sleep(2)
 		  // //sleeps the program for 2 seconds
@@ -882,7 +883,7 @@ public class PyGame {
 		  //sleep(2)
 		  // //sleeps the program for 2 seconds
 		  System.out.println ("Your choice of guns are: \n" +
-		  "1: Pistol" +
+		  "1: Pistol \n" +
 		  "2: Shotgun");
 		  //System.out.printlns '''Your choice of guns are:
 		  // 1: Pistol
@@ -892,7 +893,7 @@ public class PyGame {
 		  // creates the variable choices and System.out.printlns "Enter 1 for Pistol, Enter 2 for Shotgun"
 		  if( choice == 1 && Backpack.contains("Pistol") == false) {
 		  // if( the user choice is equal to 1 and Pistol is not in Backpack continue
-		    if( Backpack.contains("Pistol") {
+		    if( Backpack.contains("Pistol") == true) {
 		    // if( "Pistol" is already in the variable Backpakc continue
 		      System.out.println ("You already have a Pistol you goof!");
 		      // System.out.printlns "You already have a Pistol you goof!"
@@ -904,19 +905,22 @@ public class PyGame {
 		      Backpack.add("Pistol");
 		      // Adds the String Pistol to The variable Backpack
 		    }
+		  }
 		  else if( choice == 2 && Backpack.contains("Shotgun") == false) {
 		  // else if(( the user choice is equal to 2 and Shotgun is not in Backpack continue
 		    if(Backpack.contains("Shotgun") == true) {
 		    // if( the "Shotgun" string is in Backpack continue
 		      System.out.println ("You already have a Shotgun you goof!");
 		      // System.out.printlns "You already have a Pistol you goof!"
-		    if(Backpack.contains(Shotgun) == false) {
+		    }
+		    if(Backpack.contains("Shotgun") == false) {
 		    // if( "Shotgun" string is not in Backpack continue
 		      System.out.println ("Good choice, Easy kills with this bad boy!");
 		      // System.out.printlns "Good choice, Easy kills with this bad boy!"
 		      Backpack.add("Shotgun");
 		      // Adds the string "Shotgun" to the variable Backpack
 		    }
+		  }
 		  else {
 		  // if( something else other than 1 or 2 is chosen continue
 		    System.out.println ("Wasn't in the choices sorry");
@@ -969,7 +973,8 @@ public class PyGame {
 		    gunroominside();
 		    // calls the function gunroominside() to go back to it
 		  }
-
+		}
+		    
 		public static void Fightnumber1() {
 		//public static voidines Fightnumber1 with no parameters
 		  System.out.println ("Intense music incoming!");
@@ -996,7 +1001,17 @@ public class PyGame {
 		    System.out.println ("Congratulations");
 		    // System.out.printlns Congratulations
 		  }
-		  
+		  else if(choice == 2) {
+			  System.out.println("HAR HAR HAR HE DIDNT EVEN CODE FOR THIS CHOICE");
+			  System.out.println("ILL JUST LET YOU WIN ANYWAYS SINCE I DONT WANT TO CODE THIS FOR HIM");
+			  Endgame();
+		  }
+		  else {
+			  System.out.println("Invalid choice please pick a valid choice blah blah blah");
+			  Fightnumber1();
+		  }
+		}
+  
 		public static void Endgame() {
 		// public static voidines function Endgame()
 		  System.out.println ("Congratulations!");
@@ -1053,11 +1068,12 @@ public class PyGame {
 		    Endgame();
 		    // calls the function Endgame() to go to it.
 		  }
+		}
 		    
 	public static void main(String[] args) {
-		System.out.println ("This game will be based on your choices.")
+		System.out.println ("This game will be based on your choices.");
 		// System.out.printlns "This game will be based on your choices."
-		System.out.println ("Choose Wisely.")
+		System.out.println ("Choose Wisely.");
 		// System.out.printlns "Choose Wisely."
     	YourRoom();
     	// calls the function YourRoom() which untimately starts the whole game
