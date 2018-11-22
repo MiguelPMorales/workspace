@@ -1054,6 +1054,7 @@ public class PyGame {
 		    // //sleeps the program for 2 seconds
 		    System.out.println ("Just press the Stop◻️ button at the top");
 		    // System.out.printlns "Just press the Stop◻️ button at the top"
+		    System.exit(-1);
 		  }
 		  else {
 		  // if( user choice is anything other than 1 or 2 continue

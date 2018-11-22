@@ -6,7 +6,7 @@ public class RectangleTest {
 		Rectangle r1 = new Rectangle();
 		Rectangle r2 = new Rectangle(5,20,200,5);
 		
-		r2.translate(25, -25);
+		r2.translate(5, 20);
 		System.out.println(r1.toString());
 		System.out.println(r2.toString());
 		
