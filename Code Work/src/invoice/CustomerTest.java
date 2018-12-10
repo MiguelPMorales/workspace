@@ -23,6 +23,9 @@ public class CustomerTest {
 		System.out.println(l0.toString());
 		LineItem l1 = new LineItem(10 ,new Product("Vegetables",5.50));
 		System.out.println(l1.toString());
+		System.out.println("");
+		
+		
 		
 		
 	}//end main

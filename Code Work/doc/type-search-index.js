@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"invoice","l":"Customer"},{"p":"invoice","l":"CustomerTest"},{"p":"invoice","l":"Invoice"},{"p":"invoice","l":"LineItem"},{"p":"invoice","l":"Product"},{"p":"invoice","l":"TestInvoice"}]
