@@ -41,26 +41,33 @@ public class TestInvoice {
 				Invoice MO = new Invoice(c1);
 				MO.addToOrder(new Product("Bulletproof Paint",540.49), 10);
 				MO.addToOrder(new Product("Free Real Estate",0.01), 1);
+				MO.addToOrder(new Product("Samsung S9", 1200.00), 1);
+				MO.addToOrder(new Product("Taxes",10.86), 10);
+				MO.addToOrder(new Product("Lawn Fertilizer", 120.00), 1000);
 				
 				runInvoice(c1,MO);
 				System.out.println("");
 				
 				//invoice run 3
-				Customer c2 = new Customer("Some Island", "Francis", 10.0);
+				Customer c2 = new Customer("Some Island", "Francis", 99999999.0);
 				Invoice FO = new Invoice(c2);
-				FO.addToOrder(new Product("Shoes", 500.0), 1000);
-				FO.addToOrder(new Product("Something At Coco", 12.99), 5);
+				FO.addToOrder(new Product("Shoes", 5000.0), 1000);
+				FO.addToOrder(new Product("Yacht", 32124.80), 100);
+				FO.addToOrder(new Product("Mansion", 80000.0), 5);
+				FO.addToOrder(new Product("Full on Basketball Court", 10000.00), 5);
+				FO.addToOrder(new Product("Longboard", 500.0), 2);
 				
 				runInvoice(c2,FO);
 				System.out.println("");
 				
 				//invoice run 4
-				Customer c3 = new Customer("Canada", "Evil Beavers", 0);
+				Customer c3 = new Customer("Canada", "Evil Beavers", 0.0);
 				Invoice BO = new Invoice (c3);
 				BO.addToOrder(new Product("Unprocessed Logs", 50.0), 30);
 				BO.addToOrder(new Product("Dental Insurance", 10000.99), 1);
 				BO.addToOrder(new Product("Land", 1.99), 100);
-				
+				BO.addToOrder(new Product("Lake", 10000.99), 1);
+				BO.addToOrder(new Product("Toothpick", 1.99), 100);
 				runInvoice(c3,BO);
 				System.out.println("");
 	}//end main
